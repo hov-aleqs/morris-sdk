@@ -1,0 +1,117 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.hov-aleqs",
+    "module": "morris-ads",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.9"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "morris-ads-1.0.0.aar",
+          "url": "morris-ads-1.0.0.aar",
+          "size": 142025,
+          "sha512": "94937e99984602507aca799d9fa3b849535e52289791544b145e3f71f386276ae19c7c3d7d8b4bf067679f2d64287b0533340b22620c98f4c5cba5193b4a0b23",
+          "sha256": "36142daeef64f564e6ae96284d3697991732449673a0976a6e657ce578f42bcd",
+          "sha1": "10c2b8d62dd3c81347d20c0ee87c3972801a1c03",
+          "md5": "73f8a46415428900a5a2c7acb7abe2a9"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.media3",
+          "module": "media3-exoplayer",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-ui",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.12.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "morris-ads-1.0.0.aar",
+          "url": "morris-ads-1.0.0.aar",
+          "size": 142025,
+          "sha512": "94937e99984602507aca799d9fa3b849535e52289791544b145e3f71f386276ae19c7c3d7d8b4bf067679f2d64287b0533340b22620c98f4c5cba5193b4a0b23",
+          "sha256": "36142daeef64f564e6ae96284d3697991732449673a0976a6e657ce578f42bcd",
+          "sha1": "10c2b8d62dd3c81347d20c0ee87c3972801a1c03",
+          "md5": "73f8a46415428900a5a2c7acb7abe2a9"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "morris-ads-1.0.0-sources.jar",
+          "url": "morris-ads-1.0.0-sources.jar",
+          "size": 49217,
+          "sha512": "0a63eb4da05f3f3c8ec64afa51c8b37756d20d33ebdafd4633874fb6a1b91077704d92c44c4bf53e615cc1baaab5c853a0706364c9a69135e46757330b5987f5",
+          "sha256": "d18496115b5a1cbf5d9ba3d066f3fc66ed05a31040929af956e80a8b450cbd0a",
+          "sha1": "f1d1bb97f926cd4abcff8fc7df6342527e0a685c",
+          "md5": "de7751ce5c4456291b5490cfdef431a3"
+        }
+      ]
+    }
+  ]
+}

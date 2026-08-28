@@ -1,0 +1,32 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Morris SDK — Maven</title>
+<style>
+  body{max-width:46rem;margin:4rem auto;padding:0 1.5rem;
+       font:16px/1.6 ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif;color:#1a1917}
+  code,pre{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:14px}
+  pre{background:#f6f5f3;padding:1rem;border-radius:8px;overflow-x:auto}
+  h1{font-size:1.4rem;margin-bottom:.3rem}
+  p.sub{color:#6b6862;margin-top:0}
+  @media(prefers-color-scheme:dark){
+    body{background:#141412;color:#f0eee9} pre{background:#1d1c1a} p.sub{color:#9a958c}
+  }
+</style>
+<h1>Morris SDK</h1>
+<p class="sub">Maven-репозиторий. Рекламный SDK для Android — rewarded и interstitial.</p>
+
+<pre>// settings.gradle.kts
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://hov-aleqs.github.io/morris-sdk/maven") }
+    }
+}
+
+// build.gradle.kts приложения
+implementation("io.github.hov-aleqs:morris-ads:1.0.0")</pre>
+
+<p>Media3 и OkHttp подтянутся сами — они объявлены в POM.</p>
+<p>Исходники и документация: <a href="https://github.com/hov-aleqs/morris-sdk">github.com/hov-aleqs/morris-sdk</a></p>
+<p><small>Закрытое программное обеспечение. Использование — по отдельному соглашению.</small></p>
