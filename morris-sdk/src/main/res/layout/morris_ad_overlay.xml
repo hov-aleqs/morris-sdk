@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Оверлей поверх видео.
+
+  Раскладка отвечает за обязательную маркировку: adChoices слева сверху, ERID
+  справа сверху. Оба видны всё время показа и не перекрываются кнопками —
+  показ без них некорректен, поэтому они не могут быть «где останется место».
+
+  Кнопки пропуска и закрытия занимают один слот справа сверху: одновременно
+  они не появляются никогда. Пропуск сменяется закрытием по завершении ролика.
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Иконка adChoices. Тап открывает страницу о рекламных технологиях. -->
+    <ImageView
+        android:id="@+id/morris_adchoices"
+        android:layout_width="@dimen/morris_touch_min"
+        android:layout_height="@dimen/morris_touch_min"
+        android:layout_gravity="top|start"
+        android:layout_margin="@dimen/morris_edge"
+        android:padding="14dp"
+        android:background="@drawable/morris_round_bg"
+        android:contentDescription="О рекламе"
+        android:scaleType="fitCenter"
+        tools:src="@android:drawable/ic_dialog_info" />
+
+    <!-- Маркировка. Обязана быть на экране всё время показа. -->
+    <TextView
+        android:id="@+id/morris_erid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="@dimen/morris_edge"
+        android:layout_marginEnd="@dimen/morris_edge"
+        android:background="@drawable/morris_chip_bg"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textColor="@color/morris_on_ad"
+        android:textSize="11sp"
+        android:includeFontPadding="false"
+        tools:text="Реклама · erid: 2VtzqxAjfmM" />
+
+    <!-- Оставшееся время и, после skipAfter, пропуск. Один слот. -->
+    <TextView
+        android:id="@+id/morris_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="@dimen/morris_edge"
+        android:minWidth="@dimen/morris_touch_min"
+        android:minHeight="36dp"
+        android:gravity="center"
+        android:background="@drawable/morris_chip_bg"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/morris_on_ad"
+        android:textSize="13sp"
+        android:includeFontPadding="false"
+        tools:text="6" />
+
+    <!-- Звук. Ролик стартует со звуком: пользователь открыл рекламу
+         сознательно, и беззвучный старт снижает досмотр. Выключить можно
+         в один тап. -->
+    <ImageView
+        android:id="@+id/morris_sound"
+        android:layout_width="@dimen/morris_touch_min"
+        android:layout_height="@dimen/morris_touch_min"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="@dimen/morris_edge"
+        android:layout_marginBottom="@dimen/morris_sound_bottom"
+        android:padding="12dp"
+        android:background="@drawable/morris_round_bg"
+        android:contentDescription="@string/morris_sound_on"
+        android:scaleType="fitCenter"
+        android:src="@drawable/morris_ic_sound_on" />
+
+    <!-- Кнопка целевого действия. Подпись приходит от рекламодателя. -->
+    <TextView
+        android:id="@+id/morris_cta"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/morris_cta_height"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/morris_edge"
+        android:background="@drawable/morris_cta_bg"
+        android:gravity="center"
+        android:textColor="@color/morris_on_ad"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:includeFontPadding="false"
+        tools:text="В магазин" />
+
+</merge>

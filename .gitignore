@@ -1,0 +1,18 @@
+.gradle/
+.kotlin/
+build/
+local.properties
+*.iml
+.idea/
+
+# AAR кладётся в Unity-пакет задачей syncUnityPlugin, в истории ему не место:
+# закоммиченная сборка расходится с исходниками молча.
+unity/com.morris.ads/Runtime/Plugins/Android/*.aar
+
+# Промежуточные файлы проверки Unity-моста
+tools/unity-compile-check/bin/
+tools/unity-compile-check/obj/
+
+# Внутренние документы: наши серверы, наш процесс выпуска, наши машины.
+# Партнёру они не нужны, а репозиторий публичный.
+internal/

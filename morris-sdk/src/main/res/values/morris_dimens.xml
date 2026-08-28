@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="morris_edge">16dp</dimen>
+    <dimen name="morris_touch_min">48dp</dimen>
+    <dimen name="morris_adchoices">20dp</dimen>
+    <dimen name="morris_cta_height">52dp</dimen>
+    <dimen name="morris_chip_radius">4dp</dimen>
+    <dimen name="morris_sound_bottom">84dp</dimen>
+</resources>

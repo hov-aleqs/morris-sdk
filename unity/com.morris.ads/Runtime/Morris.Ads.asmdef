@@ -1,0 +1,11 @@
+{
+    "name": "Morris.Ads",
+    "rootNamespace": "Morris.Ads",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "autoReferenced": true,
+    "noEngineReferences": false
+}

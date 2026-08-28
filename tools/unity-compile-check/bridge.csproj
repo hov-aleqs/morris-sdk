@@ -1,0 +1,23 @@
+<!--
+  Компиляция Unity-моста без Unity.
+
+  Unity на этой машине нет, а мост на C# иначе никем не проверяется: ошибки в
+  нём вылезли бы только при первом импорте в чужом проекте. Ссылка идёт на
+  НАСТОЯЩУЮ UnityEngine.dll, поэтому проверяются и сигнатуры Unity API, а не
+  только синтаксис.
+-->
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AssemblyName>Morris.Ads.CompileCheck</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../unity/com.morris.ads/Runtime/**/*.cs" />
+    <Reference Include="UnityEngine">
+      <HintPath>$(UnityEngineDll)</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

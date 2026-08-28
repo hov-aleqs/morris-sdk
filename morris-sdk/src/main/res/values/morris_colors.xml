@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="morris_scrim">#66000000</color>
+    <color name="morris_on_ad">#FFFFFFFF</color>
+    <color name="morris_cta_bg">#FF3B5BDB</color>
+    <color name="morris_chip_bg">#8C000000</color>
+</resources>

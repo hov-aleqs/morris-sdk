@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Маркировка рекламы. Формат задан требованиями к маркировке, менять
+         формулировку без юридической проверки нельзя. -->
+    <string name="morris_ad_label">Реклама · erid: %1$s</string>
+    <string name="morris_skip">Пропустить</string>
+    <string name="morris_close">Закрыть</string>
+    <string name="morris_sound_on">Выключить звук</string>
+    <string name="morris_sound_off">Включить звук</string>
+</resources>

@@ -1,0 +1,16 @@
+{
+  "name": "com.morris.ads",
+  "version": "1.0.0",
+  "displayName": "Morris Ads",
+  "description": "Реклама с вознаграждением и межстраничная для Unity-игр под Android. Обёртка над нативным Morris SDK.",
+  "unity": "2021.3",
+  "keywords": ["ads", "rewarded", "interstitial", "monetization"],
+  "author": { "name": "Morris" },
+  "samples": [
+    {
+      "displayName": "Быстрый старт",
+      "description": "Сцена с двумя кнопками: загрузить и показать.",
+      "path": "Samples~/QuickStart"
+    }
+  ]
+}
